@@ -1,0 +1,3 @@
+# search for ips in files starting with t, output fields 1,11,13
+
+grep -F -f ips.txt t* |cut -d ',' -f 1,13,11
