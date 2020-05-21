@@ -1,0 +1,3 @@
+grep -v '\" 200' 20052020_nginx_access.log # cutting out the "good" stuff ie stuff that is status "ok"
+grep -v '\" 200' 20052020_nginx_access.log |cut -d " " -f2- #getting the second field on so the external IP and the rest of the data
+grep -v '\" 200' 20052020_nginx_access.log |cut -d " " -f2,8- # then I step through the second field until I get wher I need to be
