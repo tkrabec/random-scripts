@@ -1,0 +1,18 @@
+--Windows
+https://tools.tldr.run/ # a site of curated tools good, nice way to find stuff I when I need something
+C:\Windows\system32\pktmon.exe #Built in windows packet sniffer win10
+
+
+--Linux
+libpam-google-authenticator #add 2factor to ssh
+screen 
+  screen -ls #show screen sessions
+  screen -r {session number} #or omit if there is just 1
+  screen -S {name} # to name the session
+  CTRL + A D # to exit screen and keep it running or just close ssh
+  
+rclone.org #rsync to various cloud storage buckets
+
+
+--General scripting site(s)
+http://blog.commandlinekungfu.com/ #windows and linux
