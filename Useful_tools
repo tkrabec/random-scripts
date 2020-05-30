@@ -16,3 +16,15 @@ rclone.org #rsync to various cloud storage buckets
 
 --General scripting site(s)
 http://blog.commandlinekungfu.com/ #windows and linux
+
+#
+Rsyslog is not configured to use RFC5424 timestamp format by default, therefore you should manually change Rsyslog setting for it to be compliant with Log Exporter output format.
+
+# truncated Checkpoint log messages
+On the syslog server:
+1. Open /etc/rsyslog.conf
+2. If there’s an uncommented line: “$ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat”, comment it.
+3. Add the following line: $ActionFileDefaultTemplate RSYSLOG_SyslogProtocol23Format
+4. Save and close the file.
+5.Restart Rsyslog:
+  service rsyslog restart
