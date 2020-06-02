@@ -17,6 +17,9 @@ rclone.org #rsync to various cloud storage buckets
 --General scripting site(s)
 http://blog.commandlinekungfu.com/ #windows and linux
 
+--IR Resources
+https://eforensicsmag.com/download/open-source-forensic-tools/
+
 #
 Rsyslog is not configured to use RFC5424 timestamp format by default, therefore you should manually change Rsyslog setting for it to be compliant with Log Exporter output format.
 
