@@ -4,6 +4,9 @@ C:\Windows\system32\pktmon.exe #Built in windows packet sniffer win10
 
 
 --Linux
+#repository to help update packages
+cd /etc/yum.repos.d && wget https://repo.codeit.guru/codeit.el`rpm -q --qf "%{VERSION}" $(rpm -q --whatprovides redhat-release)`.repo
+
 libpam-google-authenticator #add 2factor to ssh
 screen 
   screen -ls #show screen sessions
